@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vortex Soluciones - Streaming & Conectividad</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          dark: '#0f172a',
+          card: '#1e293b',
+          textMuted: '#94a3b8'
+        }
+      }
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+.rainbow-text {
+  background-image: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.rainbow-bg {
+  background-image: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6);
+}
+.rainbow-border {
+  border-image: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6) 1;
+}
+</style>
+</head>
+<body class="bg-brand-dark text-white antialiased selection:bg-purple-500 selection:text-white">
+
+<!-- Navbar -->
+<header class="border-b border-slate-800 sticky top-0 bg-brand-dark/80 backdrop-blur-md z-50">
+  <div class="max-w-6xl mx-auto px-4 py-5 flex justify-center items-center">
+    <span class="text-3xl md:text-4xl font-extrabold tracking-tight rainbow-text">Vortex Soluciones</span>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-20 border-b border-slate-800">
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rainbow-bg opacity-10 blur-[120px] rounded-full pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+    <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-white/5 mb-6 border border-white/10 rainbow-text">
+      🚀 Conectividad & Entretenimiento Digital
+    </span>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-b from-white to-slate-300 bg-clip-text text-transparent leading-tight">
+      Todo tu entretenimiento e Internet ilimitado. <span class="rainbow-text">Sin vueltas.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-brand-textMuted max-w-2xl mx-auto mb-10 leading-relaxed">
+      Conectate sin límites con nuestra VPN de alta velocidad y disfrutá de la mejor televisión digital en cualquier dispositivo, vivas donde vivas.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a
+        href="https://wa.me/5493447558859?text=Hola!%20Estoy%20en%20la%20p%C3%A1gina%20web%20y%20tengo%20una%20consulta%20general%20sobre%20los%20servicios."
+        target="_blank"
+        class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-brand-dark font-bold px-8 py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 text-base">
+        📱 Quiero contratar por WhatsApp
+      </a>
+    </div>
+    <p class="text-xs text-brand-textMuted mt-4 italic">⚡ Activation inmediata y servicio activo las 24hs.</p>
+  </div>
+</section>
+
+<!-- Servicios Section -->
+<section id="servicios" class="py-20 max-w-6xl mx-auto px-4">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl font-bold tracking-tight mb-4">Nuestros Servicios Digitales</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-brand-card border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+      <div>
+        <div class="text-2xl mb-4">🌐</div>
+        <h3 class="text-xl font-bold mb-3">Internet sin Restricciones</h3>
+        <p class="text-brand-textMuted text-sm mb-6">Navegá de forma 100% segura, libre y sin límites de consumo con nuestra VPN optimizada.</p>
+      </div>
+      <a
+        href="https://wa.me/5493447558859?text=Hola!%20Vi%20la%20p%C3%A1gina%20web%20y%20quiero%20info%20sobre%20el%20Internet%20Ilimitado%20por%20VPN."
+        target="_blank"
+        class="w-full text-center bg-slate-900 border border-slate-700 py-2.5 rounded-xl text-sm font-medium rainbow-text">Consultar por VPN</a>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-brand-card border-2 p-8 rounded-2xl flex flex-col justify-between shadow-xl rainbow-border">
+      <div>
+        <div class="text-2xl mb-4">📺</div>
+        <h3 class="text-xl font-bold mb-3">TV Digital HD</h3>
+        <p class="text-brand-textMuted text-sm mb-6">Accedé a cientos de canales en vivo, eventos deportivos exclusivos, series y películas en alta definición.</p>
+      </div>
+      <a
+        href="https://wa.me/5493447558859?text=Hola!%20Quiero%20contratar%20el%20servicio%20de%20TV%20Digital%20HD."
+        target="_blank"
+        class="w-full text-center rainbow-bg text-white py-2.5 rounded-xl text-sm font-bold">Contratar TV Digital</a>
+    </div>
+    <!-- Card 3: Resellers -->
+    <div class="bg-brand-card border-2 p-8 rounded-2xl flex flex-col justify-between shadow-xl shadow-purple-500/10 rainbow-border">
+      <div>
+        <div class="text-2xl mb-4">🤝</div>
+        <h3 class="text-xl font-bold mb-3 rainbow-text">Programa de Revendedores</h3>
+        <p class="text-brand-textMuted text-sm mb-6">¿Querés generar un ingreso extra? Sumate como revendedor de Internet Ilimitado y TV Digital y manejá tu propia cartera de clientes.</p>
+      </div>
+      <a
+        href="https://wa.me/5493447558859?text=Hola!%20Me%20interesa%20sumarme%20al%20programa%20de%20revendedores%20de%20Internet%20Ilimitado%20y%2Fo%20TV%20Digital."
+        target="_blank"
+        class="w-full text-center rainbow-bg text-white py-3 rounded-xl text-sm font-bold shadow-lg shadow-purple-500/30 hover:brightness-110 transition">💰 Quiero ser Revendedor</a>
+    </div>
+  </div>
+</section>
+
+<!-- Convertidor Smart -->
+<section class="py-20 border-t border-b border-slate-800 bg-slate-900/40">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">¿Tu tele no es Smart? Nosotros te lo solucionamos.</h2>
+    <p class="text-brand-textMuted mb-8 max-w-2xl mx-auto">Te ofrecemos el convertidor Smart TV Box con nuestra aplicación de televisión digital ya instalada, configurada y lista para usar. Enchufás, conectás al Wi-Fi y ya estás disfrutando.</p>
+    <a
+      href="https://wa.me/5493447558859?text=Hola!%20Me%20interesa%20el%20Convertidor%20Smart%20TV%20Box%20que%20viene%20con%20la%20app%20instalada."
+      target="_blank"
+      class="rainbow-bg text-white font-bold px-6 py-3 rounded-xl text-sm">📦 Solicitar Convertidor Smart TV</a>
+  </div>
+</section>
+
+</body>
+</html>
